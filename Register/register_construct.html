@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register Page</title>
+  <link rel="stylesheet" href="register_style.css">
+</head>
+<body>
+  <form>
+    <h1>Register</h1>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Please enter a valid email address">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <span class="password-info">Password should be at least 8 symbols long.</span>
+
+    <label for="confirm-password">Confirm Password:</label>
+    <input type="password" id="confirm-password" name="confirm-password">
+
+    <div class="checkbox-container">
+      <input type="checkbox" id="agree" name="agree">
+      <label for="agree">I agree to the terms and conditions</label>
+    </div>
+
+    <button id="register-button" type="submit" onclick="checkRegister(event)">Register</button>
+  </form>
+  <script src="register_script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
